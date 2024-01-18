@@ -1,0 +1,90 @@
+.maxWidth {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+/* Inicio menu */
+.logo a{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 112px;
+    height: 44px;
+}
+
+.navbar .logo a {
+    color: var(--azul-claro);
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(90DEG, #131b38, #192039, #0088cc);
+    border-bottom: solid var(--amarelo) 1px;
+}
+
+.navbar .maxWidth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: var(--azul-claro);
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+
+.menuBtn {
+    color: var(--azul-claro);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 947px) {
+    .menuBtn {
+        display: block;
+        z-index: 999;
+    }
+    .navbar .menu {
+        background: linear-gradient(90DEG, #0a0a23,  #192039, #0088cc);
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    #menuSite.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 13px 0;
+        font-size: 25px;
+    }
+}
+
+/* Fim menu */
