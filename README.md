@@ -19,3 +19,13 @@ http://localhost:3000
 ```
 npm install react-icons --save
 ```
+
+### Axios é uma biblioteca de client HTTP que permite fazer requisição a API
+```
+npm install axios
+```
+
+### Validar campo do formulário
+```
+npm install --save yup
+```

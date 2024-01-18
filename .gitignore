@@ -36,11 +36,7 @@ yarn-error.log*
 next-env.d.ts
 
 #dir
-<<<<<<< HEAD
 utils/
-=======
-/utils/
->>>>>>> release/1.0
 
 #files
 *.zip
