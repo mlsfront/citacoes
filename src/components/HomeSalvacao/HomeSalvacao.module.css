@@ -1,0 +1,117 @@
+
+#main {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  height: 100vh;
+}
+
+#header h1 {
+  color: green;
+  text-shadow: 1px 1px var(--cinza-escuro);
+  font-size: 2.2rem;
+}
+
+#header {
+  color: var(--cinza-escuro);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 0;
+}
+
+.salvacao {
+  width: 112px;
+  height: 44px;
+}
+
+.heart {
+  font-size: 3rem;
+}
+
+.textoCopy {
+  flex-wrap: wrap;
+  gap: 14px;
+  min-width: 80%;   
+  box-shadow: 5px 10px 18px var(--azul-escuro);
+  border-radius: 7px;
+  padding: 14px;
+  margin-bottom: 14px;
+  font-size: 2rem;
+}
+
+#citacaoDisplay {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.divNewCitacao {
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+}
+
+.newCitacao {
+  background: linear-gradient(90DEG, #131b38, #192039, #0088cc);
+  border: 1px solid #232526;
+  color: #c9dfff;
+  transition: all .3s ease-in-out;
+}
+
+.newCitacao:hover {
+  background: none;
+  color: var(--cinza-escuro);
+  border: 1px solid #232526;
+  transition: all .3s ease-in-out;
+}
+
+.copyTexto {
+  margin-top: -14px;
+  margin-bottom: 7px;
+  margin-right: -14px;
+  float: right;
+  background-color: var(--azul-claro);
+  color: 232526;
+  transition: all .3s ease-in-out;
+}
+
+.copyTexto:hover {
+  color: var(--vermelho);
+  transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+
+  #citacaoDisplay {
+      margin-top: 30px;
+  }
+
+  .copyTexto:hover {
+      background: none;
+      border: 1px solid var(--cinza-escuro);
+      color: var(--cinza-escuro);
+      transition: all .3s ease-in-out;
+  }
+
+  .copyTexto {
+      border: 1px solid var(--azul-claro);
+      color: var(--cinza-escuro);
+      transition: all .3s ease-in-out;
+  }
+
+  .newCitacao:hover {
+      background: none;
+      color: var(--cinza-escuro);
+      transition: all .3s ease-in-out;
+  }
+
+  .newCitacao {
+      background: none;
+      color: var(--cinza-escuro);
+  }
+}

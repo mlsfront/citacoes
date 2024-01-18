@@ -1,0 +1,52 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --amarelo: #e39d10;
+  --amarelo-gold: #FFD700;
+  --amarelo-Khaki: #F0E68C;
+  --black: #000;
+  --azul: #10bde0;
+  --azul-claro: #c9dfff;
+  --azul-escuro: #0a0a23;
+  --azul-vivo: #0088cc;
+  --azul-gradient: #0a0a23, #192039, #0088cc;
+  --cinza-escuro: #232526;
+  --cinza-hover: #383b3c;
+  --verde-escuro: #0c100c;
+  --verde-medio: #059a13;
+  --vermelho: #F00;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--azul-claro);
+  font-size: 62.5%;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  background-color: var(--azul-claro);
+  background: url('https://mlsfront.com/img/assets/img/diversos/cordeiro-leao-o.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+ 
+button, input {
+  border-radius: 7px;    
+  border: none;
+  padding: 7px;
+  margin: 0 7px;
+  cursor: pointer;
+}
